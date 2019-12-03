@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Climate App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <!-- <script src='main.js'></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script>
+        let apps = {'Carbon': 'http://127.0.0.1:9000/',
+                    'Asset': 'http://127.0.0.1:9001/',
+                    'Stock': 'http://127.0.0.1:9002/',
+                    'Sentiments': 'http://127.0.0.1:9003/'}
+    </script>
+    <style>
+        body {
+            background-color: #1A1C23;
+        }
+        iframe {
+            background-color: #1A1C23;
+            width: 100%;
+            height: 90vh;
+        }
+        .tabs a {
+            color: white;
+            background-color: #22252B;
+        }
+        .tabs li.is-active a {
+            color: white;
+        }
+        #tabs {
+            margin: 0;
+            padding: 10px;
+            color:white;
+        }
+        .iframe-active {
+            display: block
+        }
+        .iframe-inactive {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabs is-toggle is-large is-centered" id="tabs">
+        <ul id="tabs-ul">
+        </ul>
+    </div>
+</body>
+<script>
+    function changeTab(id) {
+        // clear all tab elements
+        Object.keys(apps).forEach(function(key) {
+            let li = document.querySelector('#li-'+key);
+            let iframe = document.querySelector('#iframe-'+key);
+            li.className = '';
+            iframe.className = 'iframe-inactive';
+            if (key==id) {
+                li.classList.add('is-active');
+                iframe.className = 'iframe-active';
+            }
+            else {
+                iframe.className = 'iframe-inactive';
+            }
+        })
+    }
+
+    function createApps() {
+        let tabs_ul = document.querySelector('#tabs-ul');
+
+        for (key in apps) {
+            let value = apps[key];
+            
+            let li = document.createElement('li');
+            li.setAttribute('id', 'li-'+key);
+            li.setAttribute('onclick', "changeTab('"+key+"')" );
+            let a = document.createElement('a');
+            a.innerHTML = key;
+            li.appendChild(a);
+            tabs_ul.appendChild(li);
+
+            let iframe = document.createElement('iframe');
+            let body = document.querySelector('body');            
+            iframe.setAttribute('id', 'iframe-'+key);
+            iframe.setAttribute('src', value);
+            body.appendChild(iframe);
+        }
+    }
+    createApps();
+    changeTab(Object.keys(apps)[0]);
+</script>
+</html>

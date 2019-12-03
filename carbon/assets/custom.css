@@ -1,0 +1,161 @@
+
+body {
+    background-color: #1A1C23;
+    /* background-color: blue; */
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 1800px; 
+    margin: 0 auto;
+}
+
+#intro-section {
+    padding: 30px 20%;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-weight: 900;
+    font-stretch: expanded;
+    text-align: left;
+}
+
+#header {
+    text-align: center;
+    color: lightblue;
+}
+
+#sub-header {
+    margin-left: 50px;
+    font-size: 15px;
+    color: black;
+}
+
+#intro {
+    margin: 0 10px;
+}
+
+.container-fluid {
+    /* width: 1200px; */
+    /* width: 95%; */
+    background-color: #1A1C23;
+    padding: 10px 10px;
+}
+
+.v-center {
+    display: flex;
+    align-items: center;
+}
+
+.rc-slider-handle {
+    /* margin-left: 5px; */
+}
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: lightslategray; */
+    background-color: #1A1C23;
+}
+
+.main-content {
+    margin-top: 20px;
+    /* border: lightslategray 2px solid; */
+    border-radius: 2px;
+    /* background-color: white; */
+}
+
+.tabs-section {
+    /* margin-top: 20px; */
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-section div:hover {
+    color: lightcoral;
+}
+
+.tab-content {
+    background-color: white;
+    margin: 0;
+}
+
+.tab-content.top {
+    padding-top: 20px;
+}
+
+.col-left, .col-right {
+    margin: 0;
+    padding: 0;
+    background-color: #00000000;
+}
+
+/* .col-left {
+    margin-left: 20px;
+}
+
+.col-right {
+    margin-right: 20px;
+} */
+
+.map {
+    margin-top: 30px;
+}
+
+.year-slider {
+    margin: 0 20px;
+    /* margin: 0px 20px 40px 20px; */
+    /* display: inline-block; */
+    /* width: 400px; */
+    width: 40%;
+}
+
+.year-slider-label {
+    /* margin-right: 20px; */
+}
+
+.year-slider-value {
+    /* margin-left: 30px; */
+}
+
+#country-gdp-graph {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* margin-right: 30px; */
+    /* background-color: black; */
+}
+
+#graph-guide-text {
+    max-width: 1600px;
+    min-width: 600px;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    text-align: justify; 
+    font-size: 14px;   
+    color: black;
+}
+
+.content-tab1 {
+    margin: 0 auto;
+}
+
+.insights {
+    margin: 0 auto;
+    width: 70%;
+}
+
+#histogram {
+    /* display: inline-block; */
+    /* margin: 0 auto; */
+}
+
+#conclusion {
+    /* display: inline-block; */
+    /* padding-bottom: 60px; */
+    /* font-size: 20px; */
+    padding: 10px 0;
+    text-align: justify;
+    /* color: rgb(142, 186, 217); */
+}
