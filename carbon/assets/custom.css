@@ -14,6 +14,12 @@ body {
     color: white;
 }
 
+/* .tab {
+    background-color: #1A1C23;
+    color: white;
+} */
+
+
 h1 {
     font-weight: 900;
     font-stretch: expanded;
@@ -76,12 +82,16 @@ h1 {
 }
 
 .tab-content {
-    background-color: white;
     margin: 0;
+    background-color: #1A1C23;
+    color: white;
+}
 }
 
 .tab-content.top {
     padding-top: 20px;
+    background-color: #1A1C23;
+    color: white;
 }
 
 .col-left, .col-right {
@@ -134,11 +144,14 @@ h1 {
     padding-bottom: 15px;
     text-align: justify; 
     font-size: 14px;   
-    color: black;
+    background-color: #1A1C23;
+    color: white;
 }
 
 .content-tab1 {
     margin: 0 auto;
+    background-color: #1A1C23;
+    color: white;
 }
 
 .insights {
