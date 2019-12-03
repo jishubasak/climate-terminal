@@ -1,12 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Jun 23 09:50:29 2019
-
-Author:
-    Shihao Ran (shihao1007@gmail.com)
-    STIM Laboratory
-"""
 
 # import packages
 import os
