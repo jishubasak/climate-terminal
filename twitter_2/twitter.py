@@ -304,7 +304,7 @@ def preprocess_nltk(row):
 def update_graph_scatter(n):
 
     # query tweets from the database
-    DB_FILE = 'data_gathering/app/tweets.db'
+    DB_FILE = 'tweets.db'
     df = get_tweet_data(DB_FILE)
 
     # get the number of tweets for each keyword
@@ -401,7 +401,7 @@ def update_graph_scatter(n):
 def update_graph_bar(interval):
 
     # query tweets from the database
-    DB_FILE = 'data_gathering/app/tweets.db'
+    DB_FILE = 'tweets.db'
     df = get_tweet_data(DB_FILE)
 
     # get the counter for all the tokens
@@ -455,7 +455,7 @@ def update_graph_bar(interval):
 def update_graph_sentiment(interval):
 
     # query tweets from the database
-    DB_FILE = 'data_gathering/app/tweets.db'
+    DB_FILE = 'tweets.db'
     df = get_tweet_data(DB_FILE)
     # get the number of tweets for each keyword
     cnt = bag_of_words(df['text'])
@@ -572,7 +572,7 @@ def update_graph_sentiment(interval):
 def show_num_bins(slider_value):
     """ Display the number of bins. """
 
-    DB_FILE = 'data_gathering/app/tweets.db'
+    DB_FILE = 'tweets.db'
     df = get_tweet_data(DB_FILE)
     total_tweets = len(df)
 

@@ -33,7 +33,7 @@ auth.set_access_token(access_token, access_token_secret)
 api = API(auth)
 
 # set up words to hear
-keywords_to_hear = '#climatechange',
+keywords_to_hear = ['#climatechange',
                     '#climatestrike',
                     '#globalwarming',
                     'parisagreement',

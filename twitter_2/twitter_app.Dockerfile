@@ -1,6 +1,6 @@
 FROM continuumio/miniconda3
 
-LABEL maintainer="shihao1007@gmail.com"
+LABEL maintainer="jishubasak@gmail.com"
 
 RUN conda install -y -c conda-forge pandas nltk plotly dash
 
