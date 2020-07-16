@@ -30,7 +30,7 @@ app = dash.Dash(__name__,  external_stylesheets=external_stylesheets)
 server = app.server
 
 # read the GDP csv
-df = pd.read_csv('dataset_pred.csv')
+df = pd.read_csv('dataset_pred.csv',encoding='latin-1')
 df.set_index('country_code', inplace=True)
 
 min_year = 2012
