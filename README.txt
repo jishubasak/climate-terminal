@@ -27,11 +27,11 @@ After installing all the dependencies, we need to set up Flask apps for the four
 In order to do that:
 
 1) Git clone the repository
-2) Open Anaconda Prompts(4 anaconda prompts). The following process has to be applicable for 4 directories mentioned.
-3) Open the respective directories of the modules(Carbon, Oil, Trader, twitter_2)
+2) Open Anaconda Prompts(3 anaconda prompts). The following process has to be applicable for 3 directories mentioned.
+3) Open the respective directories of the modules(Introduction, Climate Dashboard,Twitter Sentiment)
 4) All of these directories should have app.py, which is our flask app(except twitter, it is names as twitter.py)
 5) Windows Users, type in SET FLASK_APP=app.py, SET FLASK_ENV=development, flask run --port 900[0,3]
-(change 0 for carbon, 1 for Asset, 2 for Stock and 3 for sentiments). For Mac Users, dont use SET command.
+(change 0 for Introduction, 1 for Climate Dashboard, 2 Sentiment). For Mac Users, dont use SET command.
 6) After your apps are initialized on the respective local hosts, go to your text editor and run iframe_apps.html.
 
 
